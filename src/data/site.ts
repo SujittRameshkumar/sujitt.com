@@ -25,17 +25,17 @@ export const career = [
     href: 'https://www.formation.bio',
   },
   {
-    co: 'Halluminate AI',
-    role: 'Software Engineer',
+    co: 'Halluminate',
+    role: 'Founding Engineer',
     period: '—',
-    note: 'Applied AI work at an early-stage company.',
-    href: null,
+    note: 'Built agent evaluation and benchmarking tools.',
+    href: 'https://www.halluminate.ai',
   },
   {
     co: 'Capital One',
     role: 'Software Engineer — Eno',
     period: '—',
     note: 'Conversational AI. Worked on Eno, the bank’s virtual assistant.',
-    href: null,
+    href: 'https://www.capitalone.com/digital/tools/eno/',
   },
 ];
