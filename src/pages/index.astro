@@ -1,0 +1,179 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { career, flashread } from '../data/site';
+
+const posts = (await getCollection('writing'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }).toUpperCase();
+
+const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.id}`;
+---
+
+<Base>
+  <!-- ===================== HERO ===================== -->
+  <section class="wrap hero">
+    <div class="hero__meta">
+      <span class="tag tag--box">c/o&nbsp; SUJITT RAMESHKUMAR</span>
+      <span class="quote-label muted">FIG. 01 &mdash; EST. 2026</span>
+    </div>
+
+    <h1 class="display hero__title">
+      WRITING<br />
+      ABOUT<br />
+      <span class="hero__amp">AI</span>
+    </h1>
+
+    <div class="hero__lede">
+      <p>
+        I am a software engineer in
+        <span class="q mono"></span><span class="mono upper">New York</span>
+        building personal AI, agents, and the knowledge systems around them.
+        I write about what happens when you take your own mind seriously enough
+        to externalize it.
+      </p>
+      <p class="muted">
+        Currently at Formation Bio. Previously Halluminate AI and Capital One.
+        On the side I build <a class="ul" href={flashread.site} target="_blank" rel="noopener">FlashRead</a>.
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap"><div class="hazard"></div></div>
+
+  <!-- ===================== WRITING (FOCAL) ===================== -->
+  <section class="wrap block">
+    <div class="sec-head">
+      <h2>&ldquo;Writing&rdquo;</h2>
+      <a class="quote-label ul" href="/writing">VIEW ALL &rarr;</a>
+    </div>
+
+    <div class="index">
+      {posts.map((p, i) => (
+        <a
+          class="index__row"
+          href={hrefFor(p)}
+          target={p.data.external ? '_blank' : undefined}
+          rel={p.data.external ? 'noopener' : undefined}
+        >
+          <span class="index__num">{String(i + 1).padStart(2, '0')}</span>
+          <span>
+            <span class="index__title">
+              {p.data.title}
+              {p.data.external && <span class="ext"> &#8599;</span>}
+            </span>
+            <span class="index__desc">{p.data.description}</span>
+          </span>
+          <span class="index__meta">
+            {p.data.publication ? `${p.data.publication} / ` : ''}{fmt(p.data.date)}
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- ===================== WORK HISTORY ===================== -->
+  <section class="wrap block">
+    <div class="sec-head">
+      <h2>&ldquo;Work&rdquo;</h2>
+      <span class="quote-label muted">FULL-TIME / CV</span>
+    </div>
+
+    <div class="index">
+      {career.map((c, i) => (
+        <div class="index__row index__row--static">
+          <span class="index__num">{String(i + 1).padStart(2, '0')}</span>
+          <span>
+            <span class="index__title">
+              {c.href
+                ? <a class="ul" href={c.href} target="_blank" rel="noopener">{c.co}</a>
+                : c.co}
+              <span class="tag" style="margin-left:10px; opacity:.55;">[{c.role}]</span>
+            </span>
+            <span class="index__desc">{c.note}</span>
+          </span>
+          <span class="index__meta">{c.period}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- ===================== FLASHREAD ===================== -->
+  <section class="wrap block">
+    <div class="sec-head">
+      <h2>&ldquo;FlashRead&rdquo;</h2>
+      <span class="quote-label muted">PRODUCT / IOS</span>
+    </div>
+
+    <div class="fr">
+      <p class="fr__line">
+        &ldquo;Wordle for speed reading.&rdquo; A daily game that makes you a faster
+        reader, built around the Optimal Recognition Point. Read faster. Prove it.
+      </p>
+      <div class="fr__cta">
+        <a class="btn" href={flashread.appStore} target="_blank" rel="noopener">
+          DOWNLOAD ON THE APP STORE &rarr;
+        </a>
+        <a class="ul mono fr__web" href={flashread.site} target="_blank" rel="noopener">
+          flashread.app
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-block: clamp(40px, 9vw, 96px) clamp(34px, 6vw, 64px); }
+  .hero__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: clamp(28px, 5vw, 52px);
+  }
+  .hero__title {
+    font-size: clamp(56px, 16vw, 200px);
+    margin-bottom: clamp(28px, 5vw, 48px);
+  }
+  .hero__amp { -webkit-text-stroke: 2px var(--ink); color: transparent; }
+  .hero__lede {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(18px, 4vw, 48px);
+    font-size: clamp(16px, 1.5vw, 20px);
+    line-height: 1.55;
+    max-width: 940px;
+  }
+  .hero__lede p { margin: 0; }
+  .block { padding-block: clamp(36px, 6vw, 64px); }
+  .ext { font-family: var(--mono); font-size: 0.7em; opacity: 0.55; vertical-align: super; }
+
+  .index__row--static { cursor: default; }
+  .index__row--static:hover { padding-left: 4px; background: transparent; }
+
+  .fr__line { font-size: clamp(18px, 2.2vw, 24px); max-width: 64ch; line-height: 1.45; margin: 0 0 28px; }
+  .fr__cta { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 14px 20px;
+    border: 1.5px solid var(--ink);
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  .btn:hover { background: transparent; color: var(--ink); }
+  .fr__web { font-size: 12px; letter-spacing: 0.1em; }
+
+  @media (max-width: 680px) {
+    .hero__lede { grid-template-columns: 1fr; }
+  }
+</style>

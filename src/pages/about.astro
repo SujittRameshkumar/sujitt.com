@@ -1,0 +1,148 @@
+---
+import Base from '../layouts/Base.astro';
+import { socials, career, flashread } from '../data/site';
+
+const facts = [
+  { k: 'BASED', v: 'New York, NY' },
+  { k: 'ROLE', v: 'Software Engineer' },
+  { k: 'CO.', v: 'Formation Bio' },
+  { k: 'FOCUS', v: 'AI / Agents' },
+  { k: 'STACK', v: 'TS / React / Python' },
+  { k: 'BUILDING', v: 'FlashRead' },
+];
+---
+
+<Base title="About" description="Sujitt Rameshkumar — software engineer in New York building personal AI, agents, and FlashRead. Writing about externalized memory and local-first tools.">
+  <section class="wrap block">
+    <div class="head">
+      <span class="tag tag--box">PROFILE &mdash; "c/o SUJITT"</span>
+      <h1 class="display">&ldquo;About&rdquo;</h1>
+    </div>
+
+    <div class="hazard" style="margin: 28px 0 40px;"></div>
+
+    <div class="cols">
+      <div class="main">
+        <div class="prose">
+          <p>
+            I am a software engineer in New York. I work at
+            <a class="ul" href="https://www.formation.bio" target="_blank" rel="noopener">Formation Bio</a>,
+            where I build internal AI agents and the knowledge infrastructure around them.
+            Before that I was at Halluminate AI, and before that at Capital One, working on
+            Eno, the bank&rsquo;s conversational AI. The thread through all of it is the same:
+            tools that help people think.
+          </p>
+          <p>
+            I grew up the son of immigrants, mostly outside the rooms I wanted to be in.
+            That taught me how to climb into higher-status spaces, and eventually taught me
+            that access has diminishing returns. What I am after now is depth. Real work,
+            real relationships, real capacity that cannot be shortcut.
+          </p>
+          <p>
+            On the side I build <a class="ul" href={flashread.site} target="_blank" rel="noopener">FlashRead</a>,
+            a daily speed-reading game, and I maintain an externalized brain: a repository of
+            markdown files about my own life with an AI agent on top that reads, writes, and
+            reasons across all of it. Most of my <a class="ul" href="/writing">writing</a> comes
+            out of living inside that system and noticing what it changes.
+          </p>
+          <p>
+            I believe in the hard way over the shortcut. In April 2026 I ran my first half
+            marathon in 1:59:22, mostly as a proof of concept that I do not break when there
+            is no fast path available. I am trying to apply the same idea to the things that
+            actually matter and cannot be cheated.
+          </p>
+        </div>
+
+        <div class="hazard hazard--thin" style="margin: 44px 0 28px;"></div>
+
+        <h2 class="cv-title">&ldquo;Career&rdquo;</h2>
+        <div class="cv">
+          {career.map((c) => (
+            <div class="cv__row">
+              <span class="cv__period mono">{c.period}</span>
+              <span>
+                <span class="cv__co">
+                  {c.href
+                    ? <a class="ul" href={c.href} target="_blank" rel="noopener">{c.co}</a>
+                    : c.co}
+                </span>
+                <span class="cv__role mono">{c.role}</span>
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <aside class="spec">
+        <div class="spec__title mono">&mdash; SPECIFICATIONS</div>
+        <dl class="spec__list">
+          {facts.map((f) => (
+            <div class="spec__row">
+              <dt class="mono">{f.k}</dt>
+              <dd>{f.v}</dd>
+            </div>
+          ))}
+        </dl>
+
+        <div class="spec__title mono" style="margin-top: 28px;">&mdash; ELSEWHERE</div>
+        <ul class="spec__links">
+          {socials.map((s) => (
+            <li><a class="ul" href={s.href} target="_blank" rel="me noopener">{s.label} &rarr;</a></li>
+          ))}
+          <li><a class="ul" href={flashread.site} target="_blank" rel="noopener">FlashRead &rarr;</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .block { padding-block: clamp(36px, 7vw, 80px); }
+  .head h1 { font-size: clamp(48px, 12vw, 130px); margin: 18px 0 0; }
+  .cols {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    gap: clamp(28px, 6vw, 72px);
+    align-items: start;
+  }
+  .cv-title { text-transform: uppercase; font-size: clamp(20px, 3vw, 30px); margin: 0 0 18px; }
+  .cv { border-top: 1px solid var(--line); }
+  .cv__row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 14px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+    align-items: baseline;
+  }
+  .cv__period { font-size: 11px; letter-spacing: 0.12em; opacity: 0.6; }
+  .cv__co { font-size: clamp(17px, 2vw, 21px); font-weight: 600; }
+  .cv__role { display: block; font-size: 12px; letter-spacing: 0.08em; opacity: 0.6; margin-top: 4px; }
+
+  .spec {
+    border: 1.5px solid var(--ink);
+    padding: 22px;
+    position: sticky;
+    top: 24px;
+  }
+  .spec__title { font-size: 11px; letter-spacing: 0.16em; opacity: 0.6; }
+  .spec__list { margin: 14px 0 0; }
+  .spec__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+  }
+  .spec__row dt { letter-spacing: 0.12em; font-size: 11px; opacity: 0.6; }
+  .spec__row dd { margin: 0; font-weight: 600; text-align: right; }
+  .spec__links { list-style: none; padding: 0; margin: 14px 0 0; }
+  .spec__links li { padding: 7px 0; font-size: 14px; font-weight: 600; }
+
+  @media (max-width: 760px) {
+    .cols { grid-template-columns: 1fr; }
+    .spec { position: static; }
+    .cv__row { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>

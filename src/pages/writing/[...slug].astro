@@ -1,0 +1,86 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const posts = (await getCollection('writing')).filter(
+    (p) => !p.data.draft && !p.data.external
+  );
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }).toUpperCase();
+---
+
+<Base title={post.data.title} description={post.data.description}>
+  <article class="wrap art">
+    <a class="back mono" href="/writing">&larr; INDEX</a>
+
+    <header class="art__head">
+      <div class="art__meta">
+        <span class="tag tag--box">ESSAY &mdash; "{post.data.place}"</span>
+        <span class="quote-label muted">{fmt(post.data.date)}</span>
+      </div>
+      <h1 class="display art__title">{post.data.title}</h1>
+      {post.data.subtitle && <p class="art__sub">&ldquo;{post.data.subtitle}&rdquo;</p>}
+    </header>
+
+    <div class="hazard" style="margin: 4px 0 40px;"></div>
+
+    <div class="prose">
+      <Content />
+    </div>
+
+    <div class="hazard hazard--thin" style="margin: 56px 0 24px;"></div>
+    <footer class="art__foot mono">
+      <span>END OF FILE</span>
+      <a class="ul" href="/writing">MORE WRITING &rarr;</a>
+    </footer>
+  </article>
+</Base>
+
+<style>
+  .art { padding-block: clamp(28px, 5vw, 56px) clamp(40px, 7vw, 80px); max-width: 860px; }
+  .back {
+    display: inline-block;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    opacity: 0.7;
+    margin-bottom: clamp(28px, 5vw, 52px);
+  }
+  .back:hover { opacity: 1; }
+  .art__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .art__title {
+    font-size: clamp(38px, 7.5vw, 88px);
+    line-height: 0.95;
+  }
+  .art__sub {
+    font-size: clamp(18px, 2.4vw, 26px);
+    font-style: italic;
+    margin: 18px 0 0;
+    color: var(--ink-soft);
+  }
+  .art__foot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    opacity: 0.7;
+  }
+  .art__foot a { text-decoration: none; }
+</style>

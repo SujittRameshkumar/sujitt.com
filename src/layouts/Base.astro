@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+import { socials } from '../data/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Sujitt Rameshkumar',
+  description = 'Software engineer in New York. Building personal AI, second brains, and FlashRead. Writing about local-first tools and externalized memory.',
+} = Astro.props;
+
+const fullTitle = title === 'Sujitt Rameshkumar' ? title : `${title} — Sujitt`;
+const navLinks = [
+  { href: '/', label: 'Index' },
+  { href: '/writing', label: 'Writing' },
+  { href: '/about', label: 'About' },
+];
+const year = 2026;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Sujitt Rameshkumar" />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={new URL(Astro.url.pathname, Astro.site)} />
+    <meta property="og:site_name" content="SUJITT.COM" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+  </head>
+  <body>
+    <div class="hazard hazard--thin"></div>
+
+    <header class="wrap">
+      <nav class="nav">
+        <div class="nav__id">
+          <a class="nav__brand" href="/">&ldquo;SUJITT&rdquo;</a>
+          <span class="nav__socials">
+            {socials.map((s) => (
+              <a href={s.href} target="_blank" rel="me noopener">{s.label}</a>
+            ))}
+          </span>
+        </div>
+        <div class="nav__links">
+          {navLinks.map((l) => <a href={l.href}>{l.label}</a>)}
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="wrap">
+      <div class="hazard hazard--thin" style="margin-bottom: 0;"></div>
+      <div class="foot">
+        <span>&copy; {year} &mdash; Sujitt Rameshkumar</span>
+        <span class="muted">&ldquo;New York, NY&rdquo;</span>
+        <span class="foot__links">
+          {socials.map((s) => (
+            <a href={s.href} target="_blank" rel="me noopener">{s.label}</a>
+          ))}
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

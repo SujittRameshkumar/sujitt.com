@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const posts = (await getCollection('writing'))
+  .filter((p) => !p.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }).toUpperCase();
+
+const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.id}`;
+---
+
+<Base title="Writing" description="Essays on personal AI, local-first computing, and agent architecture — plus published work from Formation Bio.">
+  <section class="wrap block">
+    <div class="head">
+      <span class="tag tag--box">FILED UNDER &mdash; "ESSAYS"</span>
+      <h1 class="display">&ldquo;Writing&rdquo;</h1>
+      <p class="muted lede">
+        Notes on personal AI, local-first computing, and agent architecture &mdash;
+        plus published work from Formation Bio. New York, 2026 &mdash;.
+      </p>
+    </div>
+
+    <div class="hazard" style="margin: 28px 0;"></div>
+
+    <div class="index">
+      {posts.map((p, i) => (
+        <a
+          class="index__row"
+          href={hrefFor(p)}
+          target={p.data.external ? '_blank' : undefined}
+          rel={p.data.external ? 'noopener' : undefined}
+        >
+          <span class="index__num">{String(i + 1).padStart(2, '0')}</span>
+          <span>
+            <span class="index__title">
+              {p.data.title}
+              {p.data.external && <span class="ext"> &#8599;</span>}
+            </span>
+            <span class="index__desc">{p.data.description}</span>
+          </span>
+          <span class="index__meta">
+            {p.data.publication ? `${p.data.publication} / ` : ''}{fmt(p.data.date)}
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .block { padding-block: clamp(36px, 7vw, 80px); }
+  .head h1 { font-size: clamp(48px, 12vw, 130px); margin: 18px 0 0; }
+  .lede { max-width: 56ch; margin-top: 20px; font-size: clamp(15px, 1.4vw, 18px); }
+  .ext { font-family: var(--mono); font-size: 0.7em; opacity: 0.55; vertical-align: super; }
+</style>

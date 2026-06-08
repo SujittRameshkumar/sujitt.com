@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="404" description="Page not found.">
+  <section class="wrap nf">
+    <span class="tag tag--box">ERROR &mdash; "NOT FOUND"</span>
+    <h1 class="display nf__code">404</h1>
+    <p class="muted">This file does not exist in the repository.</p>
+    <a class="ul mono" href="/">&larr; RETURN TO INDEX</a>
+  </section>
+</Base>
+
+<style>
+  .nf { padding-block: clamp(60px, 14vw, 160px); text-align: left; }
+  .nf__code { font-size: clamp(96px, 30vw, 320px); margin: 22px 0; }
+  .nf .ul { display: inline-block; margin-top: 18px; font-size: 13px; letter-spacing: 0.14em; }
+</style>
