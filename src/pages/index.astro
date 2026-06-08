@@ -17,8 +17,8 @@ const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.
   <!-- ===================== HERO ===================== -->
   <section class="wrap hero">
     <div class="hero__meta">
-      <span class="tag tag--box">c/o&nbsp; SUJITT RAMESHKUMAR</span>
-      <span class="quote-label muted">FIG. 01 &mdash; EST. 2026</span>
+      <span class="tag tag--box">Software Engineer</span>
+      <span class="quote-label muted">New York, NY</span>
     </div>
 
     <h1 class="display hero__title">
@@ -29,11 +29,9 @@ const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.
 
     <div class="hero__lede">
       <p>
-        I am a software engineer in
-        <span class="q mono"></span><span class="mono upper">New York</span>
-        building personal AI, agents, and the knowledge systems around them.
-        I write about what happens when you take your own mind seriously enough
-        to externalize it.
+        I am a software engineer in New York building personal AI, agents, and the
+        knowledge systems around them. I write about what happens when you take your
+        own mind seriously enough to externalize it.
       </p>
       <p class="muted">
         Currently at Formation Bio. Previously Halluminate AI and Capital One.
@@ -47,7 +45,7 @@ const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.
   <!-- ===================== WRITING (FOCAL) ===================== -->
   <section class="wrap block">
     <div class="sec-head">
-      <h2>&ldquo;Writing&rdquo;</h2>
+      <h2>Writing</h2>
       <a class="quote-label ul" href="/writing">VIEW ALL &rarr;</a>
     </div>
 
@@ -78,8 +76,8 @@ const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.
   <!-- ===================== WORK HISTORY ===================== -->
   <section class="wrap block">
     <div class="sec-head">
-      <h2>&ldquo;Work&rdquo;</h2>
-      <span class="quote-label muted">FULL-TIME / CV</span>
+      <h2>Work</h2>
+      <span class="quote-label muted">FULL-TIME</span>
     </div>
 
     <div class="index">
@@ -104,14 +102,20 @@ const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.
   <!-- ===================== FLASHREAD ===================== -->
   <section class="wrap block">
     <div class="sec-head">
-      <h2>&ldquo;FlashRead&rdquo;</h2>
-      <span class="quote-label muted">PRODUCT / IOS</span>
+      <h2>FlashRead</h2>
+      <span class="quote-label muted">iOS &middot; WEB</span>
     </div>
 
     <div class="fr">
       <p class="fr__line">
-        &ldquo;Wordle for speed reading.&rdquo; A daily game that makes you a faster
-        reader, built around the Optimal Recognition Point. Read faster. Prove it.
+        A daily speed-reading game built around the Optimal Recognition Point. I made
+        it to prove I could vibe-code something real and ship it, and it worked. It got
+        to the App Store and my friends actually play it.
+      </p>
+      <p class="fr__line fr__line--muted">
+        The product mattered less than what it taught me. Building it pushed me deep into
+        agentic programming and harness design, and that compounded into what I am
+        exploring now: personal agents, cofounder systems, second brains, and knowledge wikis.
       </p>
       <div class="fr__cta">
         <a class="btn" href={flashread.appStore} target="_blank" rel="noopener">
@@ -155,7 +159,8 @@ const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.
   .index__row--static { cursor: default; }
   .index__row--static:hover { padding-left: 4px; background: transparent; }
 
-  .fr__line { font-size: clamp(18px, 2.2vw, 24px); max-width: 64ch; line-height: 1.45; margin: 0 0 28px; }
+  .fr__line { font-size: clamp(18px, 2.2vw, 24px); max-width: 64ch; line-height: 1.45; margin: 0 0 20px; }
+  .fr__line--muted { font-size: clamp(15px, 1.6vw, 18px); color: var(--ink-soft); margin-bottom: 30px; }
   .fr__cta { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
   .btn {
     display: inline-block;

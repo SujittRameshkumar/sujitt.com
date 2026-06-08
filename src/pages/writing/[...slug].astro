@@ -25,11 +25,11 @@ const fmt = (d: Date) =>
 
     <header class="art__head">
       <div class="art__meta">
-        <span class="tag tag--box">ESSAY &mdash; "{post.data.place}"</span>
+        <span class="quote-label muted">{post.data.place}</span>
         <span class="quote-label muted">{fmt(post.data.date)}</span>
       </div>
       <h1 class="display art__title">{post.data.title}</h1>
-      {post.data.subtitle && <p class="art__sub">&ldquo;{post.data.subtitle}&rdquo;</p>}
+      {post.data.subtitle && <p class="art__sub">{post.data.subtitle}</p>}
     </header>
 
     <div class="hazard" style="margin: 4px 0 40px;"></div>
@@ -40,8 +40,8 @@ const fmt = (d: Date) =>
 
     <div class="hazard hazard--thin" style="margin: 56px 0 24px;"></div>
     <footer class="art__foot mono">
-      <span>END OF FILE</span>
-      <a class="ul" href="/writing">MORE WRITING &rarr;</a>
+      <a class="ul" href="/writing">&larr; ALL WRITING</a>
+      <span class="muted">Sujitt Rameshkumar</span>
     </footer>
   </article>
 </Base>

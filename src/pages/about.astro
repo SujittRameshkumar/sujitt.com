@@ -15,8 +15,7 @@ const facts = [
 <Base title="About" description="Sujitt Rameshkumar — software engineer in New York building personal AI, agents, and FlashRead. Writing about externalized memory and local-first tools.">
   <section class="wrap block">
     <div class="head">
-      <span class="tag tag--box">PROFILE &mdash; "c/o SUJITT"</span>
-      <h1 class="display">&ldquo;About&rdquo;</h1>
+      <h1 class="display">About</h1>
     </div>
 
     <div class="hazard" style="margin: 28px 0 40px;"></div>
@@ -33,29 +32,18 @@ const facts = [
             tools that help people think.
           </p>
           <p>
-            I grew up the son of immigrants, mostly outside the rooms I wanted to be in.
-            That taught me how to climb into higher-status spaces, and eventually taught me
-            that access has diminishing returns. What I am after now is depth. Real work,
-            real relationships, real capacity that cannot be shortcut.
-          </p>
-          <p>
             On the side I build <a class="ul" href={flashread.site} target="_blank" rel="noopener">FlashRead</a>,
             a daily speed-reading game, and I maintain an externalized brain: a repository of
             markdown files about my own life with an AI agent on top that reads, writes, and
             reasons across all of it. Most of my <a class="ul" href="/writing">writing</a> comes
-            out of living inside that system and noticing what it changes.
-          </p>
-          <p>
-            I believe in the hard way over the shortcut. In April 2026 I ran my first half
-            marathon in 1:59:22, mostly as a proof of concept that I do not break when there
-            is no fast path available. I am trying to apply the same idea to the things that
-            actually matter and cannot be cheated.
+            out of living inside that system and noticing what it changes. Lately I am exploring
+            personal agents, cofounder systems, second brains, and knowledge wikis.
           </p>
         </div>
 
         <div class="hazard hazard--thin" style="margin: 44px 0 28px;"></div>
 
-        <h2 class="cv-title">&ldquo;Career&rdquo;</h2>
+        <h2 class="cv-title">Career</h2>
         <div class="cv">
           {career.map((c) => (
             <div class="cv__row">
@@ -74,7 +62,7 @@ const facts = [
       </div>
 
       <aside class="spec">
-        <div class="spec__title mono">&mdash; SPECIFICATIONS</div>
+        <div class="spec__title mono">DETAILS</div>
         <dl class="spec__list">
           {facts.map((f) => (
             <div class="spec__row">
@@ -84,7 +72,7 @@ const facts = [
           ))}
         </dl>
 
-        <div class="spec__title mono" style="margin-top: 28px;">&mdash; ELSEWHERE</div>
+        <div class="spec__title mono" style="margin-top: 28px;">ELSEWHERE</div>
         <ul class="spec__links">
           {socials.map((s) => (
             <li><a class="ul" href={s.href} target="_blank" rel="me noopener">{s.label} &rarr;</a></li>
