@@ -7,7 +7,7 @@ place: "NEW YORK, NY"
 
 There is a version of my life that exists entirely on other people's computers.
 
-My iMessages live on Apple's servers. My therapy notes sit in SimplePractice's database. My fitness data, all the heart rate variability and sleep scores and recovery metrics, lives on Whoop's infrastructure. And my notes, my goals, my half-formed ideas about who I want to become, those are on Notion's servers somewhere in Virginia or Oregon, humming in a data center I will never visit.
+My iMessages live on Apple's servers. My photos and calendar sit in Google's cloud. My fitness data, all the heart rate variability and sleep scores and recovery metrics, lives on Whoop's infrastructure. And my notes, my goals, my half-formed ideas about who I want to become, those are on Notion's servers somewhere in Virginia or Oregon, humming in a data center I will never visit.
 
 I never signed up for this, and honestly nobody does. You just start using tools, and slowly the most intimate record of your life migrates to machines you do not own, maintained by companies whose incentives are not yours.
 
@@ -51,9 +51,9 @@ When that data lives in plain text on your own machine, it can. There is no API 
 
 ---
 
-There is a broader thing happening right now that I think most people have not fully registered. AI assistants are getting deeply personal, and not in the shallow way a targeted ad is personal, but in the sense that they are starting to know your fears, your patterns, the things you tell your therapist, the texts you send at 2am when you cannot sleep.
+There is a broader thing happening right now that I think most people have not fully registered. AI assistants are getting deeply personal, and not in the shallow way a targeted ad is personal, but in the sense that they are starting to know your habits, your patterns, the kind of thing you'd only ever put in a private journal. And a lot of the most sensitive stuff people generate already lives on machines they don't own. People's therapy notes sit in SimplePractice's database, and as these assistants get more intimate, that arrangement starts to feel a lot riskier than it used to.
 
-If the trajectory of AI is toward intimacy, toward tools that really know you and help you think about your life and your relationships and your growth, then where that data lives stops being theoretical and becomes urgent. Because the most intimate data you will ever generate has nothing to do with your credit card number or your social security number. It is the journal entry where you admit what you are afraid of, the note about a relationship that did not work and what you took from it, the map of who you are trying to become, and that is exactly the kind of record I want sitting on hardware I own rather than rented.
+If the trajectory of AI is toward intimacy, toward tools that really know you and help you think about your life and where it's headed, then where that data lives stops being theoretical and becomes urgent. Because the most intimate data you will ever generate has nothing to do with your credit card number or your social security number. It is the private journal entry, the running record of your own life, the map of who you are trying to become, and that is exactly the kind of record I want sitting on hardware I own rather than rented.
 
 ---
 

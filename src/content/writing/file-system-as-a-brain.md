@@ -68,7 +68,7 @@ What makes this different from a note-taking app or a personal wiki is that the 
 
 And because it's just files in a git repo, you own it completely. There's no vendor lock-in and no proprietary format, and you can version control your own thinking. Run `git log` and you've got an archaeological record of how your mind evolved, what you believed in January that you revised by March, what you were worried about that turned out to be nothing, what kept showing up in your entries that you refused to look at directly.
 
-The same architecture works across domains. I've used it for personal life, like journaling and processing emotions, and I've used it for software projects, like product strategy and institutional knowledge. The structure adapts because it isn't a template so much as a pattern, the same handful of moves around files, links, routing, and organic growth. It scales from a personal journal to a team knowledge base without changing what it fundamentally is.
+The same architecture works across domains. I've used it for personal life, mostly journaling and keeping track of what's going on with me, and I've used it for software projects, like product strategy and institutional knowledge. The structure adapts because it isn't a template so much as a pattern, the same handful of moves around files, links, routing, and organic growth. It scales from a personal journal to a team knowledge base without changing what it fundamentally is.
 
 ---
 

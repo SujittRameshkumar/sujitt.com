@@ -5,11 +5,11 @@ date: 2026-02-20
 place: "NEW YORK, NY"
 ---
 
-I was standing at a concert a few weeks ago, watching a band I love, when I noticed a couple in front of me. They weren't doing anything remarkable. She had her head on his shoulder and he was swaying slightly off-beat, and they were just there together in that moment. And something about it hit me hard, this wanting that wasn't for them specifically but for what they had, that easy presence.
+A few weeks ago I was at a concert in New York, and the music was incredible, but a lot of why the night hit so hard was everything around it. My roommate's girlfriend was the one performing, so the whole group of us was there for her, all the close friends packed in together. It was one of those nights you can feel mattering while it's still going on.
 
-I was on my phone at the time, not scrolling but SSH'd into my home machine (which is another story entirely), and I wrote it down. Not "saw a couple at a concert." I wrote what it felt like, the ache and the music and the way the lights made everyone look like they were underwater. I captured the texture of the moment instead of the logistics of it.
+I wanted to hold onto all of it, not just the songs she played but the set the DJ ran between acts, the opener and the closer, the dumb jokes we were making in the Uber on the way over, how damn cold it was, and how some guy I'd met earlier that night lent me his beanie so we'd survive the twenty-minute walk through a New York blizzard to the next bar. I was on my phone, not scrolling but SSH'd into my home machine ([which is another story entirely](/writing/file-system-as-a-brain)), writing down what the night actually felt like to be inside of.
 
-Months later, my system surfaced that entry alongside dozens of journal entries I'd written about partnership, loneliness, what I actually want from love. I hadn't connected them consciously. But there it was, a thread running through months of my life, and that concert was a knot in it. The feeling I'd captured wasn't lost, it was preserved, waiting to become part of a larger pattern I couldn't see in real time.
+Months later my system surfaced that entry while I was paging back through the things I'd logged about that stretch of my life. I hadn't connected any of it on purpose, but there it was, a thread running through months, and that night was a knot in it. The texture I'd captured hadn't evaporated, it was sitting there waiting to become part of a pattern I couldn't see while I was living it.
 
 That experience made me think about something I can't stop thinking about.
 
@@ -65,7 +65,7 @@ I think about this a lot. The best use of a memory system is to help you reconne
 
 The system should point you outward, toward the people and experiences that mattered, rather than inward toward a museum of your past.
 
-And none of this works without privacy. Nobody will capture their real moments (the ugly thoughts, the vulnerable confessions, the 2am spirals) if they think a company is reading them. The most important memories are the ones you'd never post, and they have to stay yours.
+And none of this works without privacy. Nobody captures their real moments, the unfiltered stuff they'd never want anyone else reading, if they think a company is logging it. The most important memories are the ones you'd never post, and they have to stay yours.
 
 ---
 

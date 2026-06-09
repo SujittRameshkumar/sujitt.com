@@ -56,17 +56,13 @@ a { color: inherit; }
   padding-inline: var(--gutter);
 }
 
-/* ---------- HAZARD TAPE ---------- */
-.hazard {
-  height: 12px;
+/* ---------- RULE / DIVIDER ---------- */
+.rule {
+  height: 2px;
   width: 100%;
-  background-image: repeating-linear-gradient(
-    -45deg,
-    var(--ink) 0 18px,
-    var(--hazard) 18px 36px
-  );
+  background: var(--ink);
 }
-.hazard--thin { height: 7px; }
+.rule--thin { height: 1px; background: var(--ink); opacity: 0.55; }
 
 /* ---------- PRODUCT TAG / META LABEL ---------- */
 .tag {
