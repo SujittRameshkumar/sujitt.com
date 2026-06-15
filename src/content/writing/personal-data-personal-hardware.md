@@ -1,64 +1,54 @@
 ---
 title: "Personal Data Requires Personal Hardware"
-description: "The most intimate record of your life has quietly migrated to machines you do not own. An argument for local-first computing, made on feel rather than abstraction."
+description: "The most intimate record of your life has quietly migrated to machines you don't own. An argument for local-first computing, made on feel rather than abstraction."
 date: 2026-02-20
 place: "NEW YORK, NY"
 ---
 
-There is a version of my life that exists entirely on other people's computers.
+There's a version of my life that exists entirely on other people's computers.
 
-My iMessages live on Apple's servers. My photos and calendar sit in Google's cloud. My fitness data, all the heart rate variability and sleep scores and recovery metrics, lives on Whoop's infrastructure. And my notes, my goals, my half-formed ideas about who I want to become, those are on Notion's servers somewhere in Virginia or Oregon, humming in a data center I will never visit.
+My iMessages live on Apple's servers. My photos and calendar sit in Google's cloud. My fitness data, every heart rate variability reading and sleep score, lives on Whoop's infrastructure. My notes, my goals, my half-formed ideas about who I want to become: those are on Notion's servers somewhere in Virginia or Oregon, humming in a data center I'll never visit.
 
-I never signed up for this, and honestly nobody does. You just start using tools, and slowly the most intimate record of your life migrates to machines you do not own, maintained by companies whose incentives are not yours.
+I never signed up for this. Nobody does. You start using tools, and slowly the most intimate record of your life migrates to machines you don't own, maintained by companies whose incentives aren't yours.
 
-I have been thinking about this a lot lately, because I have been building something for myself, a system where I keep my own journals, track my own relationships and goals, and use AI to help me think through all of it. The deeper I get into it, the more convinced I am that your most personal data should live on your own hardware.
-
-The reason has less to do with any abstract privacy argument and more to do with what it actually feels like.
+What forced the issue for me was building [a system for my own thinking](/writing/file-system-as-a-brain): my journals and goals in plain text on my own machine, with an AI that helps me reason through them. The deeper I got, the more convinced I became that this category of data belongs on hardware you own. I got here on feel, not on a privacy argument.
 
 ---
 
-There is a thought experiment I keep coming back to. Imagine your diary lives in your house, on your desk, where it has always lived. When you want help thinking through something, you read it aloud to a friend who has amnesia. They listen carefully, help you reason, offer a reflection, and then they forget everything. Tomorrow, if you want their help again, you read it aloud again. They never accumulate a profile of you, they never sell your patterns to an advertiser, they just help you think and then let go.
+Here's a thought experiment I keep coming back to. Your diary lives in your house, on your desk, where it's always lived. When you want help thinking something through, you read it aloud to a friend who has amnesia. They listen carefully, help you reason, offer a reflection, and then forget everything. Tomorrow, if you want their help again, you read it aloud again. They never accumulate a profile of you. They never sell your patterns to an advertiser. They help you think, and then they let go.
 
-That is what local-first computing with a zero-retention API should feel like. Your data stays yours, and the intelligence is borrowed rather than entangled.
+That's what local-first computing feels like when the intelligence comes through a zero-retention API, an AI you call over the wire that's contractually barred from keeping what you send. The data stays yours. The intelligence is borrowed, not entangled. You're trusting a contract, for now; a local model eventually removes even that.
 
-Philosophers have spent decades arguing that our minds do not stop at the boundaries of our skulls. A notebook or a smartphone is not just a tool we use. When something is reliable and deeply integrated into how we think, it becomes part of our cognitive architecture. The extended-mind thesis has been around since 1998, long before anyone imagined what a large language model could do.
-
-But here is the tension that framework exposes in 2026. If these tools really are extensions of your mind, then who controls them stops being a technical concern and becomes a question about the sovereignty of your own thinking. When your extended mind lives on a corporate server, someone else holds the keys to part of your cognition, and that should feel stranger than it does.
+Andy Clark and David Chalmers argued back in 1998 that minds don't stop at skulls, that a notebook or a phone, once it's reliable enough and wired deep enough into how you think, becomes part of your cognitive architecture. The extended-mind thesis predates large language models by decades, and in 2026 it stops being a seminar question. If these tools really are extensions of your mind, then whoever controls them controls part of your thinking. When your extended mind lives on a corporate server, someone else holds the keys to part of your cognition. That should feel stranger than it does.
 
 ---
 
-A friend of mine pushed back on this recently. He made the practical case. Cloud storage syncs everywhere, it is backed up automatically, and you can get at it from any device anywhere, so why would you want to deal with the friction of running your own server?
+A friend pushed back on this recently with the practical case: the cloud syncs everywhere, backs up automatically, works from any device. Why take on the friction of running your own setup?
 
-He is right that convenience matters, and I want to be honest about the tradeoff, because the local-first argument falls apart if it pretends convenience does not exist. The whole reason we handed our data to the cloud in the first place is that the cloud is easy and self-hosting is not.
+He's right, and the local-first argument falls apart the moment it pretends convenience doesn't exist. Convenience is the entire story of how we got here. We handed our data to the cloud because the cloud is easy and self-hosting isn't.
 
-But I think the framing is wrong. Local-first does not mean anti-cloud so much as it means your data is the source of truth and the cloud is optional transport. The files live on your machine, and if you want to sync them you sync them, on your terms, encrypted, through infrastructure you choose. The cloud becomes a utility instead of a landlord.
+But his framing smuggles in an assumption: that someone else's platform has to be the source of truth. Local-first still uses the cloud. The files live on your machine and the cloud is optional transport. Sync if you want, encrypted, through infrastructure you choose. The cloud becomes a utility instead of a landlord.
 
-The difference matters more than it seems. When your data is native to someone else's platform, you are locked into their format and their database and whatever export limitations they decide to give you. When your data lives in plain text markdown on your own hardware, you can read every word of it, edit what the AI wrote, correct it, and swap the AI entirely whenever you want, a different model next month or a local model or whatever emerges, because the data is yours and it is readable by anything.
+The difference compounds. When your data is native to someone else's platform, you're locked into their format and whatever export they feel like offering. When it's plain markdown on your own disk, you can read every word of it, edit what the AI wrote, and swap the AI entirely, a different model next month, a local model next year, because the data is readable by anything.
 
-Inspectability is the part nobody talks about. When your knowledge system is a black box, you are trusting the machine to represent you accurately, but when it is plain English files on your own disk you can check for yourself. You can see exactly what the AI thinks it knows about you, and you can say no, that is wrong, here is what happened. That is most of the difference between a tool you use and a cage you live in.
-
----
-
-The question I keep circling is about friction.
-
-Right now the gap between having an insight and capturing it is enormous. You are at a concert and something clicks, some connection between an idea you have been chewing on and a thing a friend said last week, and by the time you get home it is gone. The thought dissolves because the capture tool was not close enough.
-
-I think about this as a friction ladder. At the top is the laptop, high friction but deep engagement, where you can sit down and write for an hour, structure your thoughts, build something substantial. Below that is the phone, where you can SSH into your home machine from anywhere and jot down a thought in thirty seconds. Below that, eventually, will be voice, and then ambient capture. Each step down the ladder shrinks the distance between a thought and its preservation.
-
-Most tools fail because they only live at one rung. A beautiful journaling app on your laptop does not help you at midnight when something surfaces, and a quick-capture phone tool does not give you the depth for real reflection. The system has to span the whole ladder, and the data has to flow freely between every rung.
-
-When that data lives in plain text on your own machine, it can. There is no API rate limit on reading a file, and no subscription tier that gates your own memories. You are just a person with a folder of text files and whatever intelligence you want to point at them.
+Inspectability is the part that surprised me. A black-box knowledge system asks you to trust the machine's picture of you. Plain English files on your own disk let you check. You can see exactly what the AI thinks it knows about you and say no, that's wrong, here's what actually happened. That's most of the difference between a tool you use and a profile that gets used on you.
 
 ---
 
-There is a broader thing happening right now that I think most people have not fully registered. AI assistants are getting deeply personal, and not in the shallow way a targeted ad is personal, but in the sense that they are starting to know your habits, your patterns, the kind of thing you'd only ever put in a private journal. And a lot of the most sensitive stuff people generate already lives on machines they don't own. People's therapy notes sit in SimplePractice's database, and as these assistants get more intimate, that arrangement starts to feel a lot riskier than it used to.
+The other thing ownership buys you is the ability to fight friction.
 
-If the trajectory of AI is toward intimacy, toward tools that really know you and help you think about your life and where it's headed, then where that data lives stops being theoretical and becomes urgent. Because the most intimate data you will ever generate has nothing to do with your credit card number or your social security number. It is the private journal entry, the running record of your own life, the map of who you are trying to become, and that is exactly the kind of record I want sitting on hardware I own rather than rented.
+The gap between having an insight and capturing it is enormous. I was at a show in Bushwick in February when something clicked, a connection between an idea I'd been chewing on and a thing a friend had said the week before. The only reason it survived the night is that I could reach my files right there from the crowd.
+
+I think about this as a friction ladder. At the top is the laptop: high friction, deep engagement, where you can sit down and structure your thoughts for an hour. Below it is the phone, where I can SSH into my home machine from anywhere and jot a thought in thirty seconds. Below that, eventually, voice, then ambient capture. Each rung shrinks the distance between a thought and its preservation. And yes, SSH from a phone is more friction than a notes app. That's the trade I said I'd accept, and the payoff is that every rung reads and writes the same plain files.
+
+Most tools live at one rung. A beautiful journaling app on your laptop doesn't help at midnight when something surfaces, and a quick-capture widget doesn't give you room for real reflection. The system has to span the ladder, and the data has to flow freely between rungs. Plain text flows. There's no API rate limit on reading a file, and no subscription tier that gates your own memories.
 
 ---
 
-I do not have this fully figured out. I am living in the mess of it, SSHing into my home machine from my phone in the middle of the day because I had a thought I did not want to lose, maintaining plain text files by hand like it is 1993, asking an AI to help me find patterns in my own writing. It is janky and sometimes inconvenient, but there is something about it that feels right, in the way that owning a physical book feels different from renting a Kindle edition even though the words are the same.
+There's a bigger shift underneath all this. AI assistants are getting personal, and not in the way a targeted ad is personal: they're starting to know your patterns, the kind of material that used to exist only in a private journal. A lot of that material already lives on machines nobody would choose deliberately; therapy notes sit in some practice-management SaaS, waiting to become somebody's breach disclosure. Forget the credit card number. The most intimate data you'll ever generate is the running record of your own life, the map of who you're trying to become, and it's exactly the raw material for tools that will soon know you better than most of your friends do.
 
-Maybe the question is not whether local-first is better or worse than the cloud, but what relationship you want to have with your own mind. Do you want it mediated by platforms that see your inner life as a data asset, or do you want to hold it yourself, imperfectly, but on your own terms?
+---
 
-I do not think there is one right answer. But I think it is a question worth sitting with.
+I'm living in the mess of it, SSHing into my home machine from my phone in the middle of the day because I had a thought I didn't want to lose, maintaining plain text files by hand like it's 1993, asking an AI to find patterns in my own writing. It's janky. It's also mine, the way a physical book is yours and a Kindle edition is rented, even when the words are the same.
+
+For most data, take the cloud's deal; the convenience is worth it, and I'm not moving my photo library into a closet. But the record of your inner life is not most data, and it's earned different rules. Keep it on hardware you own, in formats anything can read. Accept the friction. The friction is the price of holding your own mind, and it's lower than it's ever been.

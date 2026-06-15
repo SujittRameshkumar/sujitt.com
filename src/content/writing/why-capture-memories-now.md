@@ -1,82 +1,64 @@
 ---
 title: "Why We Need to Capture Memories Now"
-description: "World models are learning to simulate reality. Your memories degrade every time you recall them. We are in a strange window, and most of your life is evaporating."
+description: "Your memories rewrite themselves every time you recall them. The systems that could rebuild them are getting close. What you capture in between is the only part you keep."
 date: 2026-02-20
 place: "NEW YORK, NY"
 ---
 
-A few weeks ago I was at a concert in New York, and the music was incredible, but a lot of why the night hit so hard was everything around it. My roommate's girlfriend was the one performing, so the whole group of us was there for her, all the close friends packed in together. It was one of those nights you can feel mattering while it's still going on.
+A few months ago I was at a concert in New York. The music was incredible, but most of why the night hit so hard was everything around it. A friend of ours was the one performing, so the whole group was there for her, packed in together. No birthday, no announcement, nothing you'd call a milestone. Just everyone in the same room. I remember standing there knowing I'd want the night back someday.
 
-I wanted to hold onto all of it, not just the songs she played but the set the DJ ran between acts, the opener and the closer, the dumb jokes we were making in the Uber on the way over, how damn cold it was, and how some guy I'd met earlier that night lent me his beanie so we'd survive the twenty-minute walk through a New York blizzard to the next bar. I was on my phone, not scrolling but SSH'd into my home machine ([which is another story entirely](/writing/file-system-as-a-brain)), writing down what the night actually felt like to be inside of.
+So I tried to keep it. I wanted all of it: her set, the DJ between acts, the dumb jokes in the absurdly long Uber on the way over (the L train was down), how cold it was, and the guy I'd met an hour earlier who lent me his beanie so I'd survive the twenty-minute walk through a blizzard to the next bar. I stood there typing quick notes into my phone so I could file them into my second brain, [something I'd recently built](/writing/file-system-as-a-brain).
 
-Months later my system surfaced that entry while I was paging back through the things I'd logged about that stretch of my life. I hadn't connected any of it on purpose, but there it was, a thread running through months, and that night was a knot in it. The texture I'd captured hadn't evaporated, it was sitting there waiting to become part of a pattern I couldn't see while I was living it.
+Months later the system surfaced that entry while I was paging back through that stretch of my life. It set the concert next to the handful of other nights I'd bothered to write up: a dinner that ran so long we never made it to the thing we'd actually planned, a cancelled flight that left a friend and me killing four hours in an airport. I hadn't connected any of it on purpose, but there it was, a thread running through months, and that night was a knot in it. The pattern was almost embarrassing once I saw it. Nothing I'd marked as worth keeping was the headline event. What I'd captured was the in-between: the Uber, the freezing walk, the beanie, the jokes that didn't survive the night.
 
-That experience made me think about something I can't stop thinking about.
-
----
-
-We're in a strange window right now. AI systems can reason over text, find patterns across thousands of entries, surface connections you'd never make on your own. But they can't reconstruct the moment itself. They can read that I was at a concert and felt a specific kind of longing, but they can't put me back there.
-
-Not yet.
-
-Most people aren't paying attention to what's happening in AI, where researchers are building what they call "world models," systems that don't just process language or generate images but build internal representations of how reality works, the physics, the light, the way objects interact and spaces feel. These aren't chatbots, they're systems learning to simulate the world itself.
-
-Right now these models generate short video clips and navigable 3D environments. They're rough and early. But the trajectory is unmistakable, and every six months they get dramatically better at understanding what a real place looks, sounds, and feels like.
-
-Now apply that trajectory to personal memory.
-
-What if, in ten years, a system could take a richly captured memory (who was there, what was said, the music playing, the weather, the emotional state you were in) and reconstruct a version of it? Not a perfect replay, not a photograph, but something more like a dream. Impressionistic, emotionally true, close enough to walk through.
-
-This isn't science fiction dressed up as prediction. The pieces are converging. You've got world models that simulate physical reality, language models that understand emotional context, and personal data systems that preserve the texture of lived experience. The only question is whether you'll have anything worth feeding into those systems when they arrive.
+My memory of that night has already gone blurry. The entry is still sharp, every detail where I left it. That gap, between what your brain keeps and what you wrote down, is about to matter a lot more than people think, because of where the technology is heading.
 
 ---
 
-What neuroscience tells us about memory is stranger than most people realize, which is that you don't replay memories, you reconstruct them.
+We're in a strange window. AI systems can already reason over text and find patterns across thousands of entries. What they can't do is reconstruct the moment itself. They can read that I was at a concert and felt a specific kind of longing. They can't put me back in the room.
 
-Every time you remember something, your brain doesn't pull up a file. It rebuilds the scene from fragments, from sensory details and emotional associations and narrative structures, and fills in the gaps with inference. The memory you recall at 25 is not the same memory you'll recall at 45. Each act of remembering subtly changes what you remember. Your memories are alive, which means they're also slowly dying, because every recall is a small act of creative editing and over time the original fades beneath the revisions.
+The research to watch is what the labs call world models: systems that learn how reality behaves, the physics of it, the way light falls in a room. DeepMind's Genie 3 generates playable 3D environments from a single text prompt. The frontier video models keep scenes coherent in ways that imply some internal model of the world. The outputs are short and the physics still glitches, but the trajectory is steep, and every six months these systems get noticeably better at knowing what a real place looks and feels like.
 
-That reconstruction is how we make meaning, not a flaw in the system. But it means the richest, most textured version of any experience you've ever had exists right now, and it's degrading.
+Apply that trajectory to personal memory. Some version of this is coming for the personal archive: a system that takes a richly captured moment and rebuilds it. Closer to a dream than a photograph: impressionistic, emotionally true, close enough to walk through.
 
-The early life-loggers understood part of this. Twenty years ago researchers started digitizing everything (emails, photos, web pages, phone calls), hundreds of thousands of artifacts from a single life. The vision was "total recall," a perfect external memory. But they captured quantity without texture. A photograph of dinner tells you where you were. It doesn't tell you that your friend had just gotten bad news about her father and you didn't know what to say but you stayed anyway and that was enough.
-
-Emotional texture matters more than facts, which is why "dinner at 7pm" is worthless data while "dinner with Sarah, she told me about her dad's diagnosis, I felt helpless but present" is a memory worth keeping, and it's the kind of thing a future system could actually do something with.
+But the world model alone doesn't get you there, and this is why the capture matters. Genie can already render a concert. It can't render that concert. The generic physics comes from the model. Everything that made the night yours, the beanie, who was packed in next to you, has to come from somewhere, and the only place it can come from is what you recorded. Your notes are the conditioning. Without them, the system can build you a beautiful room with nobody you love in it.
 
 ---
 
-Most people think of journaling as a present-tense activity. You process today's feelings and untangle what happened, and that's valuable. I do it almost every night, and it's changed how I understand myself.
+What makes the window urgent is a fact about memory that most people have backwards. You don't replay memories. You reconstruct them.
 
-But there's a future-tense argument for capturing your life that almost nobody talks about, which is that you're building a dataset of yourself.
+Neuroscientists call it reconsolidation. Recall doesn't pull up a recording; it rebuilds the scene from fragments and inference, and the rebuilt version can get stored over the original. The memory you have of a night at 25 is not the memory you'll have of it at 45. Do that enough times and the original fades beneath the revisions.
 
-Every entry, every captured moment, every documented feeling is a data point in what is essentially a world model of you. Your patterns, your people, your places, how you respond to loss and joy and boredom and desire. The richer that dataset, the more a future system can do with it. Not just summarize your year or remind you of a birthday, but actually understand the shape of your life in a way that's useful.
+That's how meaning gets made, and I'm not against it. But it means the richest version of every experience you've ever had exists right now, and it's degrading.
 
-I had a bad day recently. One of those days where everything feels flat and you can't name why. My system, unprompted, surfaced a memory I'd forgotten, a moment from months earlier that made me laugh. It didn't fix the day, but it shifted something. It reminded me that my life contains more than the current mood. There's nothing magic about it, it's just what happens when you have enough captured context for a system to know what might help.
-
-Now imagine that same capability ten times more sophisticated. A system that doesn't just surface a text memory but reconstructs the emotional environment of it, that puts you back in the room, dream-like and impressionistic but real enough to feel.
-
-We're not there. But if you believe the tools are coming, and the evidence suggests they are, then every unwritten insight and undocumented conversation and feeling that fades into noise is training data for your future self that you'll never get back.
-
-You don't feel the loss because you can't see what you've forgotten. That's the cruelest part, since the memories that could matter most are the ones you'll never know you lost.
+The lifeloggers saw part of this twenty years ago. Gordon Bell, a researcher at Microsoft, spent the 2000s digitizing his entire existence (emails, photos, phone calls, web pages) into a project called MyLifeBits: hundreds of thousands of artifacts from one life, in pursuit of what he called total recall. What I take from his experiment is that quantity isn't the thing. A photo from my concert night would tell you where I stood and who was on stage. It wouldn't tell you about the beanie, or what it felt like to be that cold with those people. "Dinner at 7pm" is worthless data. "Dinner ran four hours and we never made it to the plan" is a memory, and it's the kind a future system can actually do something with.
 
 ---
 
-There's a version of this idea that turns dark, and I want to name it. A system that endlessly replays your best moments could trap you in the past, make you nostalgic instead of present, turn you into someone who lives in memories instead of making new ones.
+Most people treat journaling as a present-tense activity. You process today, untangle what happened, and that's real; I do it almost every night and it has changed how I understand myself. But there's a future-tense argument almost nobody makes: you're building a dataset of yourself.
 
-I think about this a lot. The best use of a memory system is to help you reconnect rather than relive. You capture a dinner with a friend, the system notices you haven't talked to her in three months, and instead of replaying the dinner it says, "maybe it's time to call."
+Every captured moment is a data point in what amounts to a world model of you. Your patterns, the people you keep coming back to, how you respond to loss and to boredom. The richer that dataset, the more a future system can do with it.
 
-The system should point you outward, toward the people and experiences that mattered, rather than inward toward a museum of your past.
+I had a bad day recently, one of those flat days you can't name a reason for. That night, during my journal session, the system pulled up a moment from months earlier that made me laugh. It didn't fix anything, but it reminded me that my life contains more than the current mood. No magic involved, just enough captured context for a system to guess what might help.
 
-And none of this works without privacy. Nobody captures their real moments, the unfiltered stuff they'd never want anyone else reading, if they think a company is logging it. The most important memories are the ones you'd never post, and they have to stay yours.
+Now run that capability forward ten years, to a system that rebuilds the emotional environment around a moment instead of quoting it back. Dream-like, imperfect, real enough to feel. Tools like that are coming in some form, and the bet costs almost nothing to make. If I'm wrong, I'm left holding a very detailed journal. If I'm right, every feeling that fades into noise tonight is training data my future self will never get back.
+
+You don't feel the loss, because you can't see what you've forgotten.
 
 ---
 
-I'm 25. Memories feel abundant at this age. I went to a concert last week, and I'll go to another one next month. There's a dangerous illusion of infinite supply.
+There's a version of this idea that turns dark. A system that endlessly replays your best moments could trap you in the past, make you nostalgic instead of present, turn you into the curator of a museum about yourself.
 
-But I already can't remember most of college. I've lost the texture of entire friendships. I know certain things happened, but the way they felt, the specific quality of a particular night, the exact weight of a specific conversation, that's gone. Not because it didn't matter, but because I didn't write it down.
+The defense is a design principle: reconnect, don't relive. You capture a dinner with a friend, the system notices you haven't talked to her in three months, and instead of replaying the dinner it says maybe it's time to call. Point the system outward, toward the people who made the memories worth having.
 
-There's an inverted version of the cold start problem here. Most technology struggles because it needs data before it can be useful, but personal memory capture is the opposite. The data becomes more valuable over time, as the systems that can process it get better. Starting now, even with imperfect tools, is an investment in a future you can't fully imagine yet.
+And none of it works without privacy. Nobody captures their real moments, the unfiltered stuff, if they suspect a company is reading along. The most important memories are the ones you'd never post. They have to stay yours, which is [its own essay](/writing/personal-data-personal-hardware).
 
-I don't know exactly what that future looks like. Maybe it's walking through a dream-version of a night that changed your life. Maybe it's a system that knows you well enough to catch you before you spiral. Maybe it's something I can't conceive of, because the capabilities don't exist yet.
+---
 
-But I know the raw material is your life, it's happening right now, and most of it is evaporating.
+I'm 25. Memories feel abundant at this age. I went to a concert last week and I'll go to another next month, and that's the trap: the illusion of infinite supply.
 
-The real question isn't whether future systems will be able to do extraordinary things with personal memory, but whether you'll have given them anything to work with.
+But I already can't remember most of college. I've lost the texture of entire friendships. I know certain things happened, but the way a particular night felt is gone. Not because it didn't matter. Because I didn't write it down.
+
+Capture has an inverted cold start problem. Most technology needs data before it can be useful. Personal memory is the opposite: the data appreciates as the systems that can process it improve, which makes starting now, with imperfect tools, an investment in capabilities nobody can fully picture yet.
+
+The raw material is your life, it's happening right now, and most of it is evaporating. Future systems will be able to do extraordinary things with personal memory. Whether they can do them for you depends on what you wrote down.

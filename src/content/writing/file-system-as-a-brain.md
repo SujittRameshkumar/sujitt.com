@@ -1,79 +1,53 @@
 ---
 title: "The File System as a Brain"
 subtitle: "ML Anyone Can Do"
-description: "I accidentally built a second brain out of markdown files in a git repo. Why structuring your life for an AI to read is the most accessible machine learning there is."
+description: "I keep my life in a git repo that an AI reads and writes. Why structuring your own context is the most accessible machine learning there is."
 date: 2026-02-20
 place: "NEW YORK, NY"
 ---
 
-There's an old philosophical thought experiment that goes something like this. A man with a failing memory writes everything down in a notebook, and he consults it constantly for where to go, what he believes, who he knows. Another person just remembers these things. The question the philosophers asked was whether the notebook counts as part of the first man's mind.
+There's a folder on my laptop called `me/`. Inside it are markdown files: one for my current state, one for the people in my life, one for lessons I keep having to relearn, a journal directory organized by date. An AI reads these files when we talk and writes to them when something changes. A few weeks ago it quoted a training commitment back to me from a January entry, one I'd quietly stopped following and forgotten I'd ever written down. It felt like being caught by a friend with a perfect memory, which is roughly what it is.
 
-If you take it seriously, the answer is yes. The boundary of cognition runs not around the skull but around wherever the thinking actually happens.
+In 1998, the philosophers Andy Clark and David Chalmers published a thought experiment about a man named Otto, who has Alzheimer's and writes everything down in a notebook he consults constantly: where to go, what he believes. His friend Inga just remembers these things. Clark and Chalmers argued that if the notebook is always there, and Otto trusts it the way Inga trusts her own recall, then it counts as part of his mind. Cognition ends wherever the thinking stops happening, not at the skull.
 
-I've been thinking about this a lot lately, because I accidentally built something that made it real for me.
-
----
-
-It started the way these things usually start, with a mess. I had notes in four different apps, and chat threads with AI assistants that contained reflections I'd never find again. I had half-finished documents in Google Docs, ideas pinned in Slack messages to myself, and a journal that lived in Apple Notes but also sometimes in a physical notebook and sometimes in a text file on my desktop.
-
-The information existed, but it was scattered across so many surfaces that no single system, including my own brain, could reason over all of it at once.
-
-So I did what any engineer does when the abstractions are leaking. I started over with the simplest possible thing, which is files in a folder. Not a new app, not a database, not a proprietary format, just markdown files in a git repository.
+I read about Otto years ago and filed him away as a philosophy-seminar curiosity. Then I accidentally built his notebook. Mine reads itself.
 
 ---
 
-What I learned from doing it is that the bottleneck in AI-assisted work isn't intelligence so much as context. We have access to models that can reason, synthesize, and generate at a level that would've looked like science fiction five years ago. But every time you open a new chat thread you're starting from zero. The model knows nothing about you, your projects, your patterns, your history, so you spend the first half of every conversation re-explaining who you are.
+It started with a mess. I had notes in four different apps, reflections buried in AI chat threads I'd never reopen, half-finished Google Docs, ideas pinned in Slack messages to myself, and a journal that lived in Apple Notes except when it lived in a physical notebook or a text file on my desktop. The information existed. No system, including my own brain, could reason over all of it at once.
 
-Chat threads are context graveyards. The best insight you ever had with an AI assistant is buried in a conversation from three weeks ago that you'll never reopen.
+So I did what engineers do when the abstractions leak: started over with the simplest thing that could work. Markdown files in a git repository.
 
-What if instead you maintained a structured set of files that an AI agent could read and write to? Not a chat log and not a wiki, but a living repository, a persistent and organized memory that something other than your brain can reason over.
+The bottleneck in AI-assisted work is context. Every new chat starts from zero; the model knows nothing about you or your history, so you burn the first half of every conversation re-explaining who you are. Chat threads are context graveyards. The best insight you ever had with an AI assistant is buried in a conversation from three weeks ago that you'll never open again.
 
-That's what I built, and the strange thing is how natural it felt.
-
----
-
-There's a long lineage behind this idea, even if I didn't know it at the time. People have been dreaming about machines that extend human memory since at least the 1940s, when an engineer proposed a hypothetical device, a desk with screens and levers, that would let a researcher follow trails of association through their personal archive of documents. The machine was never built, but the vision was prophetic. Knowledge was never really about storage so much as about the trails, the connections between things.
-
-A couple decades later, another thinker coined the word "hypertext" and imagined a global system of interconnected documents. That vision eventually became the web, though in a much cruder form than he intended. What got lost in translation was the personal dimension, since the web became a place for publishing rather than for thinking.
-
-Meanwhile a sociologist in the mid-20th century built one of the most productive intellectual systems in history using nothing more than index cards in a wooden box. His method was about as simple as it gets, since he'd write one idea per card, link cards to each other, and let the network grow. He didn't pre-organize by category, he let structure emerge from connection, and the box became a conversation partner he described as a system that could surprise him with its own ideas.
-
-All of these people were circling the same insight, that cognition isn't something that happens exclusively inside your head. When you write a thought down and organize it so you can find it later, the notebook is already doing cognitive work. When the notebook can link to other notebooks, it starts to do something that looks like associative memory. And when something can read those notebooks and reason about them, now you've got externalized thought that compounds.
+What you want is memory that something other than your brain can reason over: structured files the AI reads and writes.
 
 ---
 
-The practical version of this is simpler than it sounds.
+The idea has a lineage. Vannevar Bush sketched the memex in a 1945 Atlantic essay called "As We May Think": a desk of microfilm and levers that would let a researcher follow trails of association through a personal archive. It was never built, but Bush had seen the important part, that knowledge lives in the trails, not the storage. Niklas Luhmann, a German sociologist, ran one of the most productive academic careers of the twentieth century out of wooden cabinets holding ninety thousand index cards, one idea per card, each linked to others. He didn't organize by category; he let structure emerge from connection, and he described the cabinet as a conversation partner that surprised him with its own ideas.
 
-I have a folder, and inside it there are files for different domains of my life and work. Some track my current state, like what I'm focused on and what's unresolved and what my energy level is. Some capture relationships and the evolving context around people I interact with. Some hold goals and the strategies I'm pursuing, some are raw journal entries, and some are hard-won lessons extracted from experience.
-
-There's a single instruction file at the root that acts as a routing table. It tells the AI that if the conversation is about X, read files Y and Z first, and if it's about something else, start with A and B. The agent doesn't read everything every time, it allocates its attention based on what's relevant. None of this is complicated, it's just a map.
-
-And the files behave less like static containers than like organisms. A note becomes a file, a file that gets too long becomes a directory, and a directory that develops its own internal logic becomes a sub-system. I don't pre-split things, I let the content prove it needs more space. Splitting too early just creates empty folders you feel obligated to fill, whereas letting it grow organically creates structure that's there for a reason.
-
-I restructure when a file gets too large to read usefully in one pass, not when it would look cleaner split up. The system optimizes for its own ability to reason rather than for human folder aesthetics.
+The memex stayed a sketch. Luhmann's cabinet worked.
 
 ---
 
-The part that surprised me came later. When you structure information so an AI can consume it well, when you decide what gets its own file and what links to what and what context is essential versus noisy, you're doing something that rhymes with machine learning. Not the version with weights and gradients and loss functions, but the version built out of context and structure and attention.
+The practical version is almost embarrassingly simple.
 
-You're shaping the input space so the reasoning engine produces better outputs. You're deciding what signal to amplify and what noise to suppress, and you're building a representation of your world that's optimized for a specific kind of inference.
+Different files hold different domains: current state, relationships, goals, raw journal entries, hard-won lessons. At the root sits one instruction file that works like a routing table. If the conversation is about X, read files Y and Z first. The agent doesn't read everything every time; it spends its attention on what's relevant. None of this is complicated. It's a map.
 
-This is ML anyone can do. No GPU cluster or PhD required, just a folder, some markdown files, and the willingness to externalize what you know in a way that's structured enough for something else to think with.
-
-The "training data" is your life, the "model" is whatever AI you point at the repository, and the "fine-tuning" is the ongoing act of organizing, refining, and connecting your notes so the system gets smarter over time.
+A note becomes a file. A file that gets too long becomes a directory with its own internal logic. I don't pre-split anything, because splitting early just creates empty folders you feel obligated to fill. The test for restructuring is whether a file still reads usefully in one pass, because the folders aren't there to be admired. They're there to be thought with.
 
 ---
 
-What makes this different from a note-taking app or a personal wiki is that the output goes past retrieval into reasoning. The system doesn't just hand you back what you wrote. It connects things you didn't connect, it notices patterns across entries that span months, and it holds you accountable to things you said three weeks ago that you conveniently forgot.
+When you decide what gets its own file, what links to what, which context is essential and which is noise, you're shaping the input space so a reasoning engine produces better outputs. Machine learning has names for this work: feature engineering, context engineering. It's the unglamorous side of the field, and it's also where applied ML actually wins. Andrew Ng built a whole movement, data-centric AI, around the observation that in production you get further fixing the data than swapping the model.
 
-And because it's just files in a git repo, you own it completely. There's no vendor lock-in and no proprietary format, and you can version control your own thinking. Run `git log` and you've got an archaeological record of how your mind evolved, what you believed in January that you revised by March, what you were worried about that turned out to be nothing, what kept showing up in your entries that you refused to look at directly.
-
-The same architecture works across domains. I've used it for personal life, mostly journaling and keeping track of what's going on with me, and I've used it for software projects, like product strategy and institutional knowledge. The structure adapts because it isn't a template so much as a pattern, the same handful of moves around files, links, routing, and organic growth. It scales from a personal journal to a team knowledge base without changing what it fundamentally is.
+Nobody is computing gradients in their journal. There are no weights here, no loss function, nothing to train. But the part of the field that ran on GPUs was never the part that needed you. Deciding what the system sees and how it's shaped has always been human work, and it's fully available to anyone with a folder, some markdown, and the willingness to structure what they know for something other than themselves to read.
 
 ---
 
-I think we're in the early innings of something. The tools we have for thinking with AI are still built around the chat paradigm, which is ephemeral and stateless by design. But the people getting disproportionate value from AI are the ones who've figured out how to give it memory, not by waiting for the models to get better at remembering but by building the memory layer themselves.
+What separates this from a note-taking app is what comes back out. The system connects entries that span months, and it holds you to things you said and would prefer to forget. Retrieval gives you your past. Reasoning gives you your blind spots.
 
-The file system is the oldest, most universal, most portable abstraction in computing. It turns out it might also be the most natural interface between a human mind and a machine one.
+And because it's files in a git repo, you own it completely. No vendor, no export button to pray over. Run `git log` and you get an archaeological record of your own head: what you believed in January and had revised by March, what kept showing up in entries you refused to look at directly.
 
-What would it look like if you took your own knowledge seriously enough to structure it for something other than yourself to read?
+---
+
+Otto's notebook held his memory, but it could never surprise him. Mine surprises me about once a week, most recently with the observation that almost nothing I bother to write down is the headline event of a day. The tools we have for thinking with AI are still mostly chat, ephemeral by design, and the people getting the most out of these models haven't waited for the labs to ship memory. They built it themselves, out of the oldest and most portable abstraction in computing: files in a folder.
