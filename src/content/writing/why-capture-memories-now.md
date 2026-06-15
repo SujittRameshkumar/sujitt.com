@@ -5,7 +5,7 @@ date: 2026-02-20
 place: "NEW YORK, NY"
 ---
 
-A few months ago I was at a concert in New York. The music was incredible, but most of why the night hit so hard was everything around it. A friend of ours was the one performing, so the whole group was there for her, packed in together. No birthday, no announcement, nothing you'd call a milestone. Just everyone in the same room. I remember standing there knowing I'd want the night back someday.
+A few months ago I was at a concert in New York. The music was incredible, but most of why the night hit so hard was everything around it. A friend of ours was the one performing, so the whole group was there for her, packed in together. It wasn't a milestone, no birthday or big announcement. Just everyone in the same room. I remember standing there knowing I'd want the night back someday.
 
 So I tried to keep it. I wanted all of it: her set, the DJ between acts, the dumb jokes in the absurdly long Uber on the way over (the L train was down), how cold it was, and the guy I'd met an hour earlier who lent me his beanie so I'd survive the twenty-minute walk through a blizzard to the next bar. I stood there typing quick notes into my phone so I could file them into my second brain, [something I'd recently built](/writing/file-system-as-a-brain).
 
@@ -19,7 +19,7 @@ We're in a strange window. AI systems can already reason over text and find patt
 
 The research to watch is what the labs call world models: systems that learn how reality behaves, the physics of it, the way light falls in a room. DeepMind's Genie 3 generates playable 3D environments from a single text prompt. The frontier video models keep scenes coherent in ways that imply some internal model of the world. The outputs are short and the physics still glitches, but the trajectory is steep, and every six months these systems get noticeably better at knowing what a real place looks and feels like.
 
-Apply that trajectory to personal memory. Some version of this is coming for the personal archive: a system that takes a richly captured moment and rebuilds it. Closer to a dream than a photograph: impressionistic, emotionally true, close enough to walk through.
+Apply that trajectory to personal memory. Some version of this is coming for the personal archive: a system that takes a richly captured moment and rebuilds it. Closer to a dream than a photograph, and close enough to walk through.
 
 But the world model alone doesn't get you there, and this is why the capture matters. Genie can already render a concert. It can't render that concert. The generic physics comes from the model. Everything that made the night yours, the beanie, who was packed in next to you, has to come from somewhere, and the only place it can come from is what you recorded. Your notes are the conditioning. Without them, the system can build you a beautiful room with nobody you love in it.
 
@@ -39,7 +39,7 @@ Every captured moment is a data point in what amounts to a world model of you. Y
 
 I had an off day a little while ago, one of those you can't really trace back to anything, where things just feel stuck. I sat down with my system to plan the week and close out a few open loops in my head, and it surfaced a moment from months earlier I'd completely forgotten, a dumb joke from the drive home from a ski trip, something about eating New England clam chowder in New York. Made me laugh out loud all over again. No magic to it, just enough context for the system to know which fragment was worth handing back, and when.
 
-Now run that capability forward ten years, to a system that rebuilds the emotional environment around a moment instead of quoting it back. Dream-like, imperfect, real enough to feel. Tools like that are coming in some form, and the bet costs almost nothing to make. If I'm wrong, I'm left holding a very detailed journal. If I'm right, every feeling that fades into noise tonight is training data my future self will never get back.
+Now run that capability forward ten years, to a system that rebuilds the emotional environment around a moment instead of quoting it back. Imperfect, but real enough to feel. Tools like that are coming in some form, and the bet costs almost nothing to make. If I'm wrong, I'm left holding a very detailed journal. If I'm right, every feeling that fades into noise tonight is training data my future self will never get back.
 
 You don't feel the loss, because you can't see what you've forgotten.
 
@@ -47,7 +47,7 @@ You don't feel the loss, because you can't see what you've forgotten.
 
 There's a version of this idea that turns dark. A system that endlessly replays your best moments could trap you in the past, make you nostalgic instead of present, turn you into the curator of a museum about yourself.
 
-The defense is a design principle: reconnect, don't relive. You capture a dinner with a friend, the system notices you haven't talked to her in three months, and instead of replaying the dinner it says maybe it's time to call. Point the system outward, toward the people who made the memories worth having.
+The defense is a design principle, and it comes down to where the system aims your attention. You capture a dinner with a friend, the system notices you haven't talked to her in three months, and instead of replaying the dinner it says maybe it's time to call. Point the system outward, toward the people who made the memories worth having.
 
 And none of it works without privacy. Nobody captures their real moments, the unfiltered stuff, if they suspect a company is reading along. The most important memories are the ones you'd never post. They have to stay yours, which is [its own essay](/writing/personal-data-personal-hardware).
 
@@ -55,7 +55,7 @@ And none of it works without privacy. Nobody captures their real moments, the un
 
 I'm 25. Memories feel abundant at this age. I went to a concert last week and I'll go to another next month, and that's the trap: the illusion of infinite supply.
 
-But I already can't remember most of college. I've lost the texture of entire friendships. I know certain things happened, but the way a particular night felt is gone. Not because it didn't matter. Because I didn't write it down.
+But I already can't remember most of college. I've lost the texture of entire friendships. I know certain things happened, but the way a particular night felt is gone. Those nights mattered. I just didn't write them down.
 
 Capture has an inverted cold start problem. Most technology needs data before it can be useful. Personal memory is the opposite: the data appreciates as the systems that can process it improve, which makes starting now, with imperfect tools, an investment in capabilities nobody can fully picture yet.
 
