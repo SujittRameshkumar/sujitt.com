@@ -25,9 +25,7 @@ But the world model alone doesn't get you there, and this is why the capture mat
 
 ---
 
-What makes the window urgent is a fact about memory that most people have backwards. You don't replay memories. You reconstruct them.
-
-Neuroscientists call it reconsolidation. Recall doesn't pull up a recording; it rebuilds the scene from fragments and inference, and the rebuilt version can get stored over the original. The memory you have of a night at 25 is not the memory you'll have of it at 45. Do that enough times and the original fades beneath the revisions.
+What makes the window urgent is a fact about memory that most people have backwards. Every time you remember something, you change it. Your brain rebuilds the scene from fragments and inference, and the rebuilt version can get stored over the original. Neuroscientists call it reconsolidation. The memory you have of a night at 25 is not the memory you'll have of it at 45. Do that enough times and the original fades beneath the revisions.
 
 That's how meaning gets made, and I'm not against it. But it means the richest version of every experience you've ever had exists right now, and it's degrading.
 
@@ -39,7 +37,7 @@ Most people treat journaling as a present-tense activity. You process today, unt
 
 Every captured moment is a data point in what amounts to a world model of you. Your patterns, the people you keep coming back to, how you respond to loss and to boredom. The richer that dataset, the more a future system can do with it.
 
-I had a bad day recently, one of those flat days you can't name a reason for. That night, during my journal session, the system pulled up a moment from months earlier that made me laugh. It didn't fix anything, but it reminded me that my life contains more than the current mood. No magic involved, just enough captured context for a system to guess what might help.
+I had an off day a little while ago, one of those you can't really trace back to anything, where things just feel stuck. I sat down with my system to plan the week and close out a few open loops in my head, and it surfaced a moment from months earlier I'd completely forgotten, a dumb joke from the drive home from a ski trip, something about eating New England clam chowder in New York. Made me laugh out loud all over again. No magic to it, just enough context for the system to know which fragment was worth handing back, and when.
 
 Now run that capability forward ten years, to a system that rebuilds the emotional environment around a moment instead of quoting it back. Dream-like, imperfect, real enough to feel. Tools like that are coming in some form, and the bet costs almost nothing to make. If I'm wrong, I'm left holding a very detailed journal. If I'm right, every feeling that fades into noise tonight is training data my future self will never get back.
 
