@@ -10,6 +10,8 @@ const writing = defineCollection({
     date: z.coerce.date(),
     place: z.string().default('NEW YORK, NY'),
     draft: z.boolean().default(false),
+    // Topics that feed the rotating hero word. Newest post wins on duplicates.
+    tags: z.array(z.string()).default([]),
     // For pieces published elsewhere: link out instead of rendering a local page.
     external: z.string().url().optional(),
     publication: z.string().optional(),

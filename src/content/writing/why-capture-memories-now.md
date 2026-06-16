@@ -3,6 +3,7 @@ title: "Why We Need to Capture Memories Now"
 description: "Your memories rewrite themselves every time you recall them. The systems that could rebuild them are getting close. What you capture in between is the only part you keep."
 date: 2026-06-15
 place: "NEW YORK, NY"
+tags: ["memory", "World Models"]
 ---
 
 A few months ago I was at a concert in Brooklyn. The music was incredible, but most of why the night was so important was everything around it. A friend of ours was the one performing, so the whole group was there for her, packed in together. It wasn’t a milestone, no birthday or big announcement, just everyone in the same room. I remember standing there knowing I’d want to save this as a memory.

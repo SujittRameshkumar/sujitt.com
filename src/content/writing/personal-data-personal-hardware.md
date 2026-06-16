@@ -3,6 +3,7 @@ title: "Personal Data Requires Personal Hardware"
 description: "The most intimate record of your life has quietly migrated to machines you don't own. An argument for local-first computing, made on feel rather than abstraction."
 date: 2026-02-20
 place: "NEW YORK, NY"
+tags: ["LLMs"]
 ---
 
 There's a version of my life that exists entirely on other people's computers.

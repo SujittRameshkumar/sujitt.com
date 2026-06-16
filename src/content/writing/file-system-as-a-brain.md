@@ -4,6 +4,7 @@ subtitle: "ML Anyone Can Do"
 description: "I keep my life in a git repo that an AI reads and writes. Why structuring your own context is the most accessible machine learning there is."
 date: 2026-02-20
 place: "NEW YORK, NY"
+tags: ["second brain", "personal agents", "agentic programming", "cofounder agents"]
 ---
 
 There's a folder on my laptop called `me/`. Inside it are markdown files: one for my current state, one for the people in my life, one for lessons I keep having to relearn, a journal directory organized by date. An AI reads these files when we talk and writes to them when something changes. A few weeks ago it quoted a training commitment back to me from a January entry, one I'd quietly stopped following and forgotten I'd ever written down. It felt like being caught by a friend with a perfect memory, which is roughly what it is.

@@ -11,6 +11,20 @@ const fmt = (d: Date) =>
   d.toLocaleDateString('en-US', { year: 'numeric', month: 'short' }).toUpperCase();
 
 const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.id}`;
+
+// Rotating hero word. Built from each post's `tags` frontmatter, newest first;
+// the first time a tag appears wins, so the most recent post claims a shared
+// topic. Add `tags: [...]` to a new post and it joins the rotation automatically.
+const seenTags = new Set<string>();
+const heroTags = [{ word: 'AI', href: '/writing', external: false }];
+for (const p of posts) {
+  for (const t of p.data.tags) {
+    const key = t.toLowerCase();
+    if (seenTags.has(key)) continue;
+    seenTags.add(key);
+    heroTags.push({ word: t, href: hrefFor(p), external: Boolean(p.data.external) });
+  }
+}
 ---
 
 <Base>
@@ -24,7 +38,7 @@ const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.
     <h1 class="display hero__title">
       WRITING<br />
       ABOUT<br />
-      <span class="hero__amp">AI</span>
+      <a class="hero__amp" id="hero-tag" href="/writing" data-i="0">AI</a>
     </h1>
 
     <div class="hero__lede">
@@ -143,7 +157,17 @@ const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.
     font-size: clamp(56px, 16vw, 200px);
     margin-bottom: clamp(28px, 5vw, 48px);
   }
-  .hero__amp { -webkit-text-stroke: 2px var(--ink); color: transparent; }
+  .hero__amp {
+    -webkit-text-stroke: 2px var(--ink);
+    color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.28s ease, color 0.2s ease;
+  }
+  /* fill the outline on hover/focus — signals it's clickable */
+  .hero__amp:hover,
+  .hero__amp:focus-visible { color: var(--ink); }
+  .hero__amp.is-swapping { opacity: 0; }
   .hero__lede {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -182,3 +206,38 @@ const hrefFor = (p: (typeof posts)[number]) => p.data.external ?? `/writing/${p.
     .hero__lede { grid-template-columns: 1fr; }
   }
 </style>
+
+<script define:vars={{ heroTags }}>
+  const el = document.getElementById('hero-tag');
+  if (el && heroTags.length > 1) {
+    const apply = (t) => {
+      el.textContent = t.word;
+      el.setAttribute('href', t.href);
+      if (t.external) {
+        el.setAttribute('target', '_blank');
+        el.setAttribute('rel', 'noopener');
+      } else {
+        el.removeAttribute('target');
+        el.removeAttribute('rel');
+      }
+    };
+
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let i = 0;
+
+    if (reduce) {
+      // No motion: show one stable topic instead of "AI", still clickable.
+      i = 1;
+      apply(heroTags[1]);
+    } else {
+      setInterval(() => {
+        i = (i + 1) % heroTags.length;
+        el.classList.add('is-swapping');
+        setTimeout(() => {
+          apply(heroTags[i]);
+          el.classList.remove('is-swapping');
+        }, 280);
+      }, 2800);
+    }
+  }
+</script>
