@@ -37,7 +37,7 @@ for (const p of posts) {
 
     <h1 class="display hero__title">
       WRITING<br />
-      ABOUT<br />
+      ABOUT
       <a class="hero__amp" id="hero-tag" href="/writing" data-i="0">AI</a>
     </h1>
 
@@ -161,8 +161,9 @@ for (const p of posts) {
     /* smaller than WRITING/ABOUT so long topics (e.g. AGENTIC PROGRAMMING)
        stay on one line and don't run to the right edge */
     font-size: clamp(30px, 7.5vw, 80px);
-    display: inline-block;
+    display: block;
     line-height: 0.92;
+    margin-top: 0.06em;
     white-space: nowrap;
     -webkit-text-stroke: 1.5px var(--ink);
     color: transparent;
